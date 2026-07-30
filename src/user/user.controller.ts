@@ -12,7 +12,7 @@ export class UserController {
   ];
  }
  @Post()
-  createUser(@Body() body: any) {
+  createUser(@Body() CreateUserDto: CreateUserDto) {
     return {
       message: 'User created successfully',
     };
